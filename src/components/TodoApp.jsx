@@ -19,6 +19,8 @@ const TodoApp = () => {
         settitle('')
     }
 
+    
+
 
   return (
       <div>
@@ -48,7 +50,7 @@ const TodoApp = () => {
                         
                         {
                             todos.map(todo => (
-                               <Todo key={todo.id} todo={todo}/>
+                               <Todo key={todo.id} todo={todo} settodos={settodos} todos={todos}/>
                             )
                             )
                         }
